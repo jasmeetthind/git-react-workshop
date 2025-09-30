@@ -3,31 +3,42 @@ import "./App.css"
 import cardsData from "./assets/cardsData";
 
 import Card from "./components/card";
+import Home from "./components/home";
+import Navbar from "./components/navbar.jsx";
+import Contact from "./components/contact.jsx";
 
 function App() {
 
   return (
-    <>
+      <>
+          <Navbar/>
+          <section id="home">
+              <Home/>
+          </section>
 
-      /* Add components here */
+          <section id="projects">
 
-      <h1> Projects</h1>
-      <div className="projects">
+              <h1> Projects</h1>
+              <div className="projects">
 
-        {cardsData.map((card, index) => (
-          <Card
-            key={index}
-            image={card.image}
-            title={card.title}
-            description={card.description}
-            link={card.link}
-          />
-        ))}
-      </div>
+                  {cardsData.map((card, index) => (
+                      <Card
+                          key={index}
+                          image={card.image}
+                          title={card.title}
+                          description={card.description}
+                          link={card.link}
+                      />
+                  ))}
+              </div>
 
-      /* Add components here */
+          </section>
 
-    </>
+          <section id="contact" className="contact">
+              <Contact/>
+          </section>
+
+      </>
   );
 
 }
