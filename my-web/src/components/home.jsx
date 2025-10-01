@@ -34,7 +34,7 @@ function Home() {
                    </h2>
 
                    <p className="hero-desc">
-                       I love building interactive websites and programs. I also enjoy learning new languages. I am currently completing my german certification.
+                       I love building interactive websites and programs. I also like learning about Human Computer Interactions.
                    </p>
 
                    <button
